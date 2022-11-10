@@ -9,15 +9,24 @@ app = FastAPI()
 
 
 class Post(BaseModel):
-    id: int
-    created: str
+    created: int
     content: str
 
 
-@app.get('/')
+@app.get('/posts')
 def root():
     with open('data.json', "r") as database:
         return json.load(database)
+
+
+@app.get('/posts/{id}')
+def get_post(id):
+    with open('data.json', "r") as database:
+        data = json.load(database)
+
+        response_post = [post for post in data["data"] if post["id"] == id][0]
+
+        return response_post
 
 
 @app.post('/posts')
