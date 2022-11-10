@@ -1,19 +1,9 @@
 {
-  "data": [
-    {
-      "id": "0991815f-5566-427f-965a-903b6f23d7c4",
-      "created": "now",
-      "content": "test"
-    },
-    {
-      "id": "f6210f86-867d-44e2-bf40-1a67f9e53619",
-      "created": "now1",
-      "content": "test2"
-    },
-    {
-      "id": "08abdbb6-0940-4e5d-b54e-0cc07b035de8",
-      "created": 123,
-      "content": "test10"
-    }
-  ]
+    "data": [
+        {
+            "id": "fa81dcdb-3efd-4a2d-bc91-3d58504e05f6",
+            "created": 1234,
+            "content": "test101"
+        }
+    ]
 }
